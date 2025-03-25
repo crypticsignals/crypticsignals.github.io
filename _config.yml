@@ -7,3 +7,4 @@ plugins:
 header_pages:
   - index.md
   - about.md
+markdown: kramdown

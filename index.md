@@ -7,8 +7,19 @@ title: "Home"
 
 ## Recent Posts
 
-| Date       | Title  |
-|------------|--------|
-{% for post in site.posts limit:5 %}
-| {{ post.date | date: "%Y-%m-%d" }} | [{{ post.title }}]({{ post.url }}) |
-{% endfor %}
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Title</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for post in site.posts limit:5 %}
+    <tr>
+      <td>{{ post.date | date: "%Y-%m-%d" }}</td>
+      <td><a href="{{ post.url }}">{{ post.title }}</a></td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
