@@ -4,3 +4,6 @@ description: >-
 theme: minima
 plugins:
   - jekyll-feed
+header_pages:
+  - index.md
+  - about.md
