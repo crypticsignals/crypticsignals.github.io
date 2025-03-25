@@ -1,0 +1,6 @@
+title: Crypticsignals's Blog
+description: >-
+  A blog that's on Github Pages. That I run.
+theme: minima
+plugins:
+  - jekyll-feed
