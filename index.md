@@ -8,11 +8,10 @@ title: "Home"
 ## Recent Posts
 
 <ul>
-{% for post in site.posts limit:5 %}
-  <li>
-    <strong><a href="{{ post.url }}">{{ post.title }}</a></strong> 
-    <br>
-    <small>{{ post.date | date: "%Y-%m-%d" }}</small>
-  </li>
-{% endfor %}
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      {{ post.excerpt }}
+    </li>
+  {% endfor %}
 </ul>
