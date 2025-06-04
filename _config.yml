@@ -1,0 +1,11 @@
+title: Crypticsignals's Blog Page
+description: >-
+  The postings of an aspiring cybersecurity professional.
+  Hosted by Github Pages.
+theme: minima
+plugins:
+  - jekyll-feed
+header_pages:
+  - index.md
+  - about.md
+markdown: kramdown
